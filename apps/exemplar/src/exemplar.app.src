@@ -1,0 +1,21 @@
+{application, exemplar,
+ [
+  {description, "A fancy app"},
+  {vsn, "1"},
+  {modules, [
+    exemplar_app,
+    exemplar_sup,
+    callback_handler,
+    index
+  ]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  cowboy,
+                  mustache,
+                  riakc
+                 ]},
+  {mod, { exemplar_app, []}},
+  {env, []}
+ ]}.
